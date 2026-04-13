@@ -41,7 +41,11 @@ export default async function Experience() {
       <p className="text-gray-500 text-lg mb-12">My professional journey.</p>
 
       {experience.length === 0 ? (
-        <p className="text-gray-400 italic">No experience data available. Make sure the backend is running.</p>
+        <div className="text-center py-20 text-gray-400">
+          <p className="text-5xl mb-4">🚧</p>
+          <p className="text-xl font-medium text-gray-500">Coming soon</p>
+          <p className="text-sm mt-2">Work experience will be added here shortly.</p>
+        </div>
       ) : (
         <div className="relative border-l-2 border-indigo-200 ml-4 space-y-10">
           {experience.map((item) => (

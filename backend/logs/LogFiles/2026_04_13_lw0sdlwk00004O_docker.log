@@ -1,0 +1,164 @@
+2026-04-13T22:26:29.1013999Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-13T22:26:31.7514070Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-13T22:26:31.7517238Z Container start method called.
+2026-04-13T22:26:31.7775738Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for praveen-portfolio-api., DetailsLevel: INFO
+2026-04-13T22:26:31.7779075Z Establishing network.
+2026-04-13T22:26:31.7792698Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-13T22:26:32.8913443Z Image appsvc/python:3.11_20260203.2.tuxprod is pulled from registry 10.1.0.5:13209
+2026-04-13T22:26:32.9077094Z Container is starting.
+2026-04-13T22:26:32.9078682Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for praveen-portfolio-api., DetailsLevel: INFO
+2026-04-13T22:26:32.9080215Z Establishing user namespace if not established already.
+2026-04-13T22:26:32.9081882Z Establishing network if not established already.
+2026-04-13T22:26:32.9083496Z Mounting volumes.
+2026-04-13T22:26:32.9086771Z Nested mountpoint 
+2026-04-13T22:26:32.9284260Z Nested mountpoint volatile/logs
+2026-04-13T22:26:32.9687859Z Nested mountpoint 
+2026-04-13T22:26:33.1785976Z Nested mountpoint 
+2026-04-13T22:26:33.2169255Z Nested mountpoint 
+2026-04-13T22:26:33.9192146Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for praveen-portfolio-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-13T22:26:33.9195254Z Creating container.
+2026-04-13T22:26:33.9302919Z Creating pipes for streaming container io.
+2026-04-13T22:26:33.9509181Z Creating stdout named pipe at /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stdout_5295eb9ef17645fb9e3d62bfcc6fffe5.
+2026-04-13T22:26:33.9718210Z Successfully created stdout named pipe at: /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stdout_5295eb9ef17645fb9e3d62bfcc6fffe5.
+2026-04-13T22:26:33.9884698Z Opening named pipe /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stdout_5295eb9ef17645fb9e3d62bfcc6fffe5 for reading in non-blocking mode.
+2026-04-13T22:26:33.9888469Z Successfully opened named pipe: /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stdout_5295eb9ef17645fb9e3d62bfcc6fffe5.
+2026-04-13T22:26:33.9891203Z Successfully removed non-blocking flag from /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stdout_5295eb9ef17645fb9e3d62bfcc6fffe5.
+2026-04-13T22:26:33.9893943Z Creating stderr named pipe at /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stderr_1f403ea52c504e54bb40c2cfbc97505f.
+2026-04-13T22:26:33.9895660Z Successfully created stderr named pipe at: /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stderr_1f403ea52c504e54bb40c2cfbc97505f.
+2026-04-13T22:26:33.9896946Z Opening named pipe /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stderr_1f403ea52c504e54bb40c2cfbc97505f for reading in non-blocking mode.
+2026-04-13T22:26:33.9910847Z Successfully opened named pipe: /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stderr_1f403ea52c504e54bb40c2cfbc97505f.
+2026-04-13T22:26:33.9914350Z Successfully removed non-blocking flag from /podr/container/pipe/deaada012b1f_praveen-portfolio-api/stderr_1f403ea52c504e54bb40c2cfbc97505f.
+2026-04-13T22:26:33.9917657Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-13T22:26:35.5177664Z Starting container: deaada012b1f_praveen-portfolio-api.
+2026-04-13T22:26:35.7239847Z Starting watchers and probes.
+2026-04-13T22:26:35.7456554Z Starting metrics collection.
+2026-04-13T22:26:35.7522089Z Container is running.
+2026-04-13T22:26:35.7553081Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container praveen-portfolio-api successfully created and is running., DetailsLevel: INFO
+2026-04-13T22:26:36.1867156Z Container start method finished after 4434 ms.
+2026-04-13T22:26:36.1875428Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container praveen-portfolio-api successfully created and is running., DetailsLevel: INFO
+2026-04-13T22:26:36.3951318Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-13T22:27:19.0754099Z Site startup probe succeeded after 42.5709993 seconds.
+2026-04-13T22:27:19.6498513Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 42.5709993 seconds., DetailsLevel: INFO
+2026-04-13T22:27:20.8032594Z Site is running with deployment version: b76b522d-b38d-4440-95b8-5df76cd8eb41
+2026-04-13T22:27:20.8130151Z Site started.
+2026-04-13T22:27:20.8218698Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/13/2026 22:27:20 (UTC), DetailsLevel: INFO
+2026-04-13T22:27:21.1472226Z Site is running with patch version PYTHON 3.11.14
+2026-04-13T22:28:02.1484244Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-13T22:28:07.4742740Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-13T22:28:07.4744998Z Container start method called.
+2026-04-13T22:28:07.4745654Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for praveen-portfolio-api., DetailsLevel: INFO
+2026-04-13T22:28:07.4749114Z Establishing network.
+2026-04-13T22:28:07.4750741Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-13T22:28:09.5633478Z Container is starting.
+2026-04-13T22:28:09.5634727Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for praveen-portfolio-api., DetailsLevel: INFO
+2026-04-13T22:28:09.5635850Z Establishing user namespace if not established already.
+2026-04-13T22:28:09.5637115Z Establishing network if not established already.
+2026-04-13T22:28:09.5638372Z Mounting volumes.
+2026-04-13T22:28:09.5640062Z Nested mountpoint 
+2026-04-13T22:28:09.6142759Z Nested mountpoint volatile/logs
+2026-04-13T22:28:09.6614074Z Nested mountpoint 
+2026-04-13T22:28:09.7137039Z Nested mountpoint 
+2026-04-13T22:28:09.8332279Z Nested mountpoint 
+2026-04-13T22:28:11.6510189Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for praveen-portfolio-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-13T22:28:11.7409891Z Creating container.
+2026-04-13T22:28:11.7494796Z Creating pipes for streaming container io.
+2026-04-13T22:28:11.7496884Z Creating stdout named pipe at /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stdout_58517cb48c07467f94b4a4006c7ee4e3.
+2026-04-13T22:28:11.7513897Z Successfully created stdout named pipe at: /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stdout_58517cb48c07467f94b4a4006c7ee4e3.
+2026-04-13T22:28:11.7606746Z Opening named pipe /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stdout_58517cb48c07467f94b4a4006c7ee4e3 for reading in non-blocking mode.
+2026-04-13T22:28:11.7615818Z Successfully opened named pipe: /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stdout_58517cb48c07467f94b4a4006c7ee4e3.
+2026-04-13T22:28:11.7701450Z Successfully removed non-blocking flag from /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stdout_58517cb48c07467f94b4a4006c7ee4e3.
+2026-04-13T22:28:11.7717201Z Creating stderr named pipe at /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stderr_22999ba4c44347e2bf4b8668bdf3d8b1.
+2026-04-13T22:28:11.8082546Z Successfully created stderr named pipe at: /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stderr_22999ba4c44347e2bf4b8668bdf3d8b1.
+2026-04-13T22:28:11.8088767Z Opening named pipe /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stderr_22999ba4c44347e2bf4b8668bdf3d8b1 for reading in non-blocking mode.
+2026-04-13T22:28:11.8094192Z Successfully opened named pipe: /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stderr_22999ba4c44347e2bf4b8668bdf3d8b1.
+2026-04-13T22:28:11.8100333Z Successfully removed non-blocking flag from /podr/container/pipe/8c49261a623a_praveen-portfolio-api/stderr_22999ba4c44347e2bf4b8668bdf3d8b1.
+2026-04-13T22:28:11.8102924Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-13T22:28:12.9532723Z Starting container: 8c49261a623a_praveen-portfolio-api.
+2026-04-13T22:28:13.1902107Z Starting watchers and probes.
+2026-04-13T22:28:13.1920358Z Starting metrics collection.
+2026-04-13T22:28:13.1922587Z Container is running.
+2026-04-13T22:28:13.1924780Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container praveen-portfolio-api successfully created and is running., DetailsLevel: INFO
+2026-04-13T22:28:13.6192543Z Container start method finished after 6144 ms.
+2026-04-13T22:28:13.6195324Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container praveen-portfolio-api successfully created and is running., DetailsLevel: INFO
+2026-04-13T22:28:13.6195909Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-13T22:29:15.4551278Z Container has finished running with exit code: 127.
+2026-04-13T22:29:15.4768234Z Container is terminating. Grace period: 5 seconds.
+2026-04-13T22:29:15.4960349Z Stop and delete container. Retry count = 0
+2026-04-13T22:29:15.5051517Z Stopping container: 8c49261a623a_praveen-portfolio-api.
+2026-04-13T22:29:15.6568269Z Deleting container: 8c49261a623a_praveen-portfolio-api. Retry count = 0
+2026-04-13T22:29:16.1476698Z Container spec TerminationMessagePolicy  path 
+2026-04-13T22:29:16.1577006Z Container is terminated. Total time elapsed: 673 ms.
+2026-04-13T22:29:16.1580203Z Site container: praveen-portfolio-api terminated during site startup.
+2026-04-13T22:29:16.1697208Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:29:16.2351172Z Site startup probe failed after 62.4672818 seconds.
+2026-04-13T22:29:16.4887048Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:29:16.5143032Z Failed to start site. Revert by stopping site.
+2026-04-13T22:29:16.5368650Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:29:16.5547835Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:29:16.5640485Z Site: praveen-portfolio-api stopped.
+2026-04-13T22:29:38.2774271Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/13/2026 22:27:20 (UTC), DetailsLevel: INFO
+2026-04-13T22:29:38.2798759Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/13/2026 22:27:20 (UTC), DetailsLevel: INFO
+2026-04-13T22:29:38.2801136Z Container is terminating. Grace period: 5 seconds.
+2026-04-13T22:29:38.3015686Z Stop and delete container. Retry count = 0
+2026-04-13T22:29:38.3016986Z Stopping container: deaada012b1f_praveen-portfolio-api.
+2026-04-13T22:29:43.4446652Z Deleting container: deaada012b1f_praveen-portfolio-api. Retry count = 0
+2026-04-13T22:29:43.8536626Z Container spec TerminationMessagePolicy  path 
+2026-04-13T22:29:43.8549196Z Container is terminated. Total time elapsed: 5573 ms.
+2026-04-13T22:29:43.8551194Z Site: praveen-portfolio-api stopped.
+2026-04-13T22:29:16.5996479Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:29:17.6818759Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:29:17.9576813Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/13/2026 22:29:17 (UTC), DetailsLevel: ERR
+2026-04-13T22:29:17.9787373Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/13/2026 22:29:17 (UTC), DetailsLevel: ERR
+2026-04-13T22:30:14.6574222Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/13/2026 22:29:17 (UTC), DetailsLevel: ERR
+2026-04-13T22:30:17.0799535Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/13/2026 22:29:17 (UTC), DetailsLevel: ERR
+2026-04-13T22:30:17.0805037Z Container start method called.
+2026-04-13T22:30:17.0811991Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for praveen-portfolio-api., DetailsLevel: INFO
+2026-04-13T22:30:17.0962791Z Establishing network.
+2026-04-13T22:30:17.0966741Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-13T22:30:17.4798064Z Container is starting.
+2026-04-13T22:30:17.4799784Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for praveen-portfolio-api., DetailsLevel: INFO
+2026-04-13T22:30:17.4801874Z Establishing user namespace if not established already.
+2026-04-13T22:30:17.4808750Z Establishing network if not established already.
+2026-04-13T22:30:17.4812758Z Mounting volumes.
+2026-04-13T22:30:17.4887347Z Nested mountpoint 
+2026-04-13T22:30:17.5605356Z Nested mountpoint volatile/logs
+2026-04-13T22:30:17.5740531Z Nested mountpoint 
+2026-04-13T22:30:17.5824196Z Nested mountpoint 
+2026-04-13T22:30:17.5910415Z Nested mountpoint 
+2026-04-13T22:30:18.0245263Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for praveen-portfolio-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-13T22:30:18.0264156Z Creating container.
+2026-04-13T22:30:18.0266376Z Creating pipes for streaming container io.
+2026-04-13T22:30:18.0532506Z Creating stdout named pipe at /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stdout_7ef07dd5ee564d02aaf6deaf52dd6eff.
+2026-04-13T22:30:18.0535865Z Successfully created stdout named pipe at: /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stdout_7ef07dd5ee564d02aaf6deaf52dd6eff.
+2026-04-13T22:30:18.0546366Z Opening named pipe /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stdout_7ef07dd5ee564d02aaf6deaf52dd6eff for reading in non-blocking mode.
+2026-04-13T22:30:18.0549271Z Successfully opened named pipe: /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stdout_7ef07dd5ee564d02aaf6deaf52dd6eff.
+2026-04-13T22:30:18.0552307Z Successfully removed non-blocking flag from /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stdout_7ef07dd5ee564d02aaf6deaf52dd6eff.
+2026-04-13T22:30:18.0838531Z Creating stderr named pipe at /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stderr_a99e82ac282c49db8b2478af80194615.
+2026-04-13T22:30:18.0913677Z Successfully created stderr named pipe at: /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stderr_a99e82ac282c49db8b2478af80194615.
+2026-04-13T22:30:18.0916215Z Opening named pipe /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stderr_a99e82ac282c49db8b2478af80194615 for reading in non-blocking mode.
+2026-04-13T22:30:18.0924809Z Successfully opened named pipe: /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stderr_a99e82ac282c49db8b2478af80194615.
+2026-04-13T22:30:18.0926853Z Successfully removed non-blocking flag from /podr/container/pipe/601604c2f6ca_praveen-portfolio-api/stderr_a99e82ac282c49db8b2478af80194615.
+2026-04-13T22:30:18.1008015Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-13T22:30:19.1141323Z Starting container: 601604c2f6ca_praveen-portfolio-api.
+2026-04-13T22:30:19.2860332Z Starting watchers and probes.
+2026-04-13T22:30:19.3067363Z Starting metrics collection.
+2026-04-13T22:30:19.3071713Z Container is running.
+2026-04-13T22:30:19.3072808Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container praveen-portfolio-api successfully created and is running., DetailsLevel: INFO
+2026-04-13T22:30:19.6452516Z Container start method finished after 2564 ms.
+2026-04-13T22:30:19.6455198Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container praveen-portfolio-api successfully created and is running., DetailsLevel: INFO
+2026-04-13T22:30:19.6455537Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-13T22:30:52.2504360Z Container has finished running with exit code: 127.
+2026-04-13T22:30:52.2508011Z Container is terminating. Grace period: 5 seconds.
+2026-04-13T22:30:52.2528821Z Stop and delete container. Retry count = 0
+2026-04-13T22:30:52.2530113Z Stopping container: 601604c2f6ca_praveen-portfolio-api.
+2026-04-13T22:30:52.3301016Z Deleting container: 601604c2f6ca_praveen-portfolio-api. Retry count = 0
+2026-04-13T22:30:52.5578120Z Container spec TerminationMessagePolicy  path 
+2026-04-13T22:30:52.5601045Z Container is terminated. Total time elapsed: 308 ms.
+2026-04-13T22:30:52.5602469Z Site container: praveen-portfolio-api terminated during site startup.
+2026-04-13T22:30:52.5603981Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:29:16, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:30:52.6095035Z Site startup probe failed after 32.9629597 seconds.
+2026-04-13T22:30:52.9050062Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:30:52, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:30:52.9336773Z Failed to start site. Revert by stopping site.
+2026-04-13T22:30:52.9339455Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:30:52, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:30:52.9342227Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/13/2026 22:30:52, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: praveen-portfolio-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-13T22:30:52.9342403Z Site: praveen-portfolio-api stopped.

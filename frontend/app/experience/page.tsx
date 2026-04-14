@@ -1,6 +1,6 @@
-export const metadata = {
-  title: "Experience | My Portfolio",
-};
+"use client";
+
+import { useEffect, useState } from "react";
 
 interface ExperienceItem {
   id: number;
@@ -14,17 +14,7 @@ interface ExperienceItem {
   highlights: string[];
 }
 
-async function getExperience(): Promise<ExperienceItem[]> {
-  try {
-    const res = await fetch("http://localhost:8000/api/experience", {
-      cache: "no-store",
-    });
-    if (!res.ok) throw new Error("Failed to fetch");
-    return res.json();
-  } catch {
-    return [];
-  }
-}
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 function formatDate(dateStr: string) {
   const [year, month] = dateStr.split("-");
@@ -32,8 +22,15 @@ function formatDate(dateStr: string) {
   return date.toLocaleDateString("en-US", { month: "short", year: "numeric" });
 }
 
-export default async function Experience() {
-  const experience = await getExperience();
+export default function Experience() {
+  const [experience, setExperience] = useState<ExperienceItem[]>([]);
+
+  useEffect(() => {
+    fetch(`${API_URL}/api/experience/`)
+      .then((res) => (res.ok ? res.json() : []))
+      .then(setExperience)
+      .catch(() => setExperience([]));
+  }, []);
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">

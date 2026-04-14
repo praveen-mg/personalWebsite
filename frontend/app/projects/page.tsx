@@ -1,6 +1,6 @@
-export const metadata = {
-  title: "Projects | Praveen Kumar Gandhi",
-};
+"use client";
+
+import { useEffect, useState } from "react";
 
 interface Project {
   id: number;
@@ -11,20 +11,17 @@ interface Project {
   demo: string;
 }
 
-async function getProjects(): Promise<Project[]> {
-  try {
-    const res = await fetch("http://localhost:8000/api/projects", {
-      cache: "no-store",
-    });
-    if (!res.ok) throw new Error("Failed to fetch");
-    return res.json();
-  } catch {
-    return [];
-  }
-}
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
-export default async function Projects() {
-  const projects = await getProjects();
+export default function Projects() {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetch(`${API_URL}/api/projects/`)
+      .then((res) => (res.ok ? res.json() : []))
+      .then(setProjects)
+      .catch(() => setProjects([]));
+  }, []);
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">

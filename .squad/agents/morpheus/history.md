@@ -28,3 +28,7 @@
 
 - Created `docs/architecture.md` as canonical system topology reference. Includes high-level Mermaid diagram (frontend/backend/routes/data sources), component stack details, Azure resource table with costs, request flow example, known gaps list, and AS-IS manual deployment flow diagram. Documentation is factual, not aspirational — documents what exists, not what README claims. Decision drop logged to `.squad/decisions/inbox/morpheus-architecture-doc.md` establishing update obligations on topology changes.
 
+### 2026-04-16 — README reconciled with reality
+
+- Rewrote `README.md` to accurately reflect AS-IS project state. Removed all aspirational claims: SQL/PostgreSQL/database references, Azure Blob Storage, Docker/containers, CI/CD automation claims, `infra/setup.sh` references, and false contact form delivery claims. Added explicit "Known Limitations" section documenting gaps (no CI/CD, contact form non-functional, Experience page empty, hardcoded CORS). Added "Architecture" section linking to `docs/architecture.md` for technical detail. Cost table now accurate (~$13/mo, not $29/mo). Structure reflects actual folders (`.squad/`, `docs/`). README is now the canonical user-facing landing page; `docs/architecture.md` remains the canonical technical reference.
+

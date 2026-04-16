@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "assignments": [
+    {
+      "assignment_id": "initial-2026-04-16",
+      "timestamp": "2026-04-16T21:23:00Z",
+      "universe": "The Matrix",
+      "team_size": 5,
+      "shape": "web-fullstack-azure",
+      "members": ["Morpheus", "Trinity", "Tank", "Link", "Switch"]
+    }
+  ]
+}
